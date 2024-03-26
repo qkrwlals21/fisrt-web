@@ -1,0 +1,40 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom:20px;
+    margin:0;
+}
+#grid ol {
+    font-size:20px;
+    border-right: 2px solid black;
+    width: 100px;
+    margin:0;
+    padding: 30px;
+}
+body {
+    margin:0;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+#article {
+    padding-left:30px;
+}
+
+/*@media(max-width:800px) {
+ = screen width > 800px 
+    div {
+        display:none;
+    }
+}*/
+@media(max-width:800px) {
+/* = screen width < 800px */
+    #grid {
+        display:block;
+    }
+    #grid ol {
+        border-right:none;
+    }
+}
